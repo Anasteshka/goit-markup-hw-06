@@ -814,6 +814,7 @@ input:checked + .check-policy > .check-text-box {
   }
 
   /* .team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
   } */
 
   .portfolio-list {
@@ -861,6 +862,10 @@ input:checked + .check-policy > .check-text-box {
   .team-list {
     gap: 24px;
   }
+
+  /* .team-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+  } */
 
   .portfolio-section {
     padding: 120px 0;
