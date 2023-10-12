@@ -810,8 +810,11 @@ input:checked + .check-policy > .check-text-box {
 
   .team-list {
     gap: 64px 24px;
-    margin: 0 auto;
+    justify-content: center;
   }
+
+  /* .team-list-item {
+  } */
 
   .portfolio-list {
     gap: 72px 24px;
