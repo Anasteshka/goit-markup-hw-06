@@ -422,12 +422,15 @@ button {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
 }
 
-.footer-div-text {
+/* .footer-div-text {
   margin-right: 120px;
-}
+} */
 
 .footer-logo {
   color: rgb(77, 90, 229);
@@ -464,10 +467,10 @@ button {
 
 .footer-list-soc {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   gap: 16px;
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 
 .footer-item-soc {
@@ -496,12 +499,15 @@ button {
 }
 
 .footer-sub {
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 80px; */
 }
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .sub-text {
@@ -518,7 +524,7 @@ button {
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
-  width: 264px;
+  width: 288px;
   height: 40px;
   padding: 8px 16px;
   outline: transparent;
@@ -534,7 +540,7 @@ input::placeholder {
 }
 
 .footer-btn {
-  min-width: 165px;
+  width: 165px;
   border-radius: 4px;
   background: rgb(77, 90, 229);
   display: flex;
@@ -877,6 +883,31 @@ input:checked + .check-policy > .check-text-box {
 
   .portfolio-list-item {
     flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .footer-container {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .footer-div-text {
+    margin-right: 120px;
+  }
+
+  .footer-sub {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-form-input {
+    width: 264px;
   }
 }
 
