@@ -886,6 +886,11 @@ input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  position: relative;
+}
+
+.check-text {
+  margin-left: 24px;
 }
 
 .check-text-box {
@@ -894,13 +899,16 @@ input::placeholder {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 8px;
+  /* margin-right: 8px; */
   align-items: center;
   justify-content: center;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .policy-link {
