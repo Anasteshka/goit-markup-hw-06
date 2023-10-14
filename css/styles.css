@@ -112,6 +112,11 @@ button {
   position: relative;
 }
 
+.header-menu-link:hover,
+header-menu-link:focus {
+  color: rgb(64, 75, 191);
+}
+
 .header-menu-studio {
   color: rgb(64, 75, 191);
 }
@@ -1073,6 +1078,11 @@ input:checked + .check-policy > .check-text-box {
   .header-address-list {
     display: flex;
     gap: 40px;
+    align-items: center;
+  }
+
+  .header-address-item:nth-child(1) {
+    margin: 0;
   }
 
   .header-address-link {
