@@ -227,6 +227,10 @@ button {
   text-transform: capitalize;
 }
 
+.mob-menu-link:active {
+  color: rgb(64, 75, 191);
+}
+
 .mob-menu-studio {
   color: rgb(64, 75, 191);
 }
@@ -245,6 +249,10 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.mob-address-link:active {
+  color: rgb(77, 90, 229);
 }
 
 .mob-menu-email {
@@ -729,15 +737,15 @@ input::placeholder {
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   background: rgb(252, 252, 252);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 24px 16px;
   padding-top: 72px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -812,7 +820,7 @@ input::placeholder {
 }
 
 .modal-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -874,7 +882,7 @@ input::placeholder {
 }
 
 .check-policy {
-  color: #8e8f99;
+  color: rgb(142, 143, 153);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1020,6 +1028,13 @@ input:checked + .check-policy > .check-text-box {
 
   .footer-form {
     gap: 24px;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 24px;
+    padding-top: 72px;
   }
 }
 
