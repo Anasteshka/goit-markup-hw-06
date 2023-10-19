@@ -895,6 +895,7 @@ input::placeholder {
 }
 
 .check-text {
+  display: block;
   margin-left: 24px;
 }
 
@@ -904,7 +905,6 @@ input::placeholder {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  /* margin-right: 8px; */
   align-items: center;
   justify-content: center;
   fill: transparent;
