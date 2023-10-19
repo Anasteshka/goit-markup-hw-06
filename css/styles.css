@@ -891,16 +891,17 @@ input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .check-text {
-  display: block;
-  margin-left: 24px;
 }
 
 .check-text-box {
   display: inline-flex;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -911,9 +912,6 @@ input::placeholder {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .policy-link {
